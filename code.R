@@ -1,4 +1,4 @@
-seat = read.csv('C:/Users/ASUSPRO/Desktop/Data Science/Seatdata.csv')
+seat = read.csv('C:/Seatdata.csv')
 mf<-lm(SeatX~Stature+Sitting.Height+SHS+BMI+Weight+L11+H17,data=seat)
 mr<-lm(SeatX~Sitting.Height+BMI+Weight+L11+H17,data=seat) 
 anova(mr,mf)
